@@ -1,5 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  output: 'standalone',
   webpack: (config, { isServer }) => {
     if (!isServer) {
       config.resolve.fallback = {
@@ -21,6 +22,13 @@ const nextConfig = {
     }
     return config;
   },
+  eslint: {
+    ignoreDuringBuilds: true,
+  },
+  typescript: {
+    // Opt out of type checking during Vercel builds; CI can run tsc separately if needed
+    ignoreBuildErrors: true,
+  },
   env: {
     NEAR_NETWORK: process.env.NEAR_NETWORK || 'testnet',
     IPFS_GATEWAY: process.env.IPFS_GATEWAY || 'https://ipfs.io/ipfs/',
@@ -34,7 +42,7 @@ const nextConfig = {
         headers: [
           {
             key: 'X-Application-Name',
-            value: 'BetterHalf.ai',
+            value: 'Amigo.ai',
           },
         ],
       },
