@@ -1,6 +1,6 @@
-# BetterHalf.ai
+# Amigo.ai
 
-Your AI companion for life - a personalized AI assistant that understands your schedule, preferences, and lifestyle to provide tailored recommendations and support. Built with privacy-first design using Arkiv DB, NEAR Protocol, and advanced encryption.
+Your AI friend and companion - a personalized AI assistant that helps you manage your schedule, stay productive, and make life easier. Built with privacy-first design using Arkiv DB, NEAR Protocol, and advanced encryption.
 
 ## 🏗️ Architecture
 
@@ -36,7 +36,7 @@ Your AI companion for life - a personalized AI assistant that understands your s
 1. **Clone and install dependencies**:
 ```bash
 git clone <repository-url>
-cd betterhalf-ai
+cd amigo-ai
 npm install
 ```
 
